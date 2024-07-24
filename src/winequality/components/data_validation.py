@@ -18,11 +18,11 @@ class DataValidation:
                 if col not in all_schema:
                     validate_status = False
                     with open(self.config.STATUS_FILE, 'w') as f:
-                        f.write(f"validation status{validate_status}")
+                        f.write(f"validation status: {validate_status}")
                 else:
                     validate_status = True
                     with open(self.config.STATUS_FILE, 'w') as f:
-                        f.write(f"validation status{validate_status}")
+                        f.write(f"validation status: {validate_status}")
             return validate_status
         except Exception as e:
             raise e
