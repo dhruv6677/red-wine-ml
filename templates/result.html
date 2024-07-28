@@ -4,13 +4,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Wine Quality Prediction</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-image: linear-gradient(to bottom right, #3b82f6, #1e3a8a);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .card h1 {
+            font-size: 1.5rem;
+            color: #333333;
+            margin-bottom: 1.5rem;
+        }
+
+        .prediction {
+            font-size: 1.25rem;
+            color: #4f46e5;
+            font-weight: bold;
+            margin-top: 1rem;
+            padding: 10px 20px;
+            background-color: #e0f2fe;
+            border-radius: 5px;
+            display: inline-block;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>enter in predict page</h1>
-    <h1>Wine Quality</h1>
-    <h1>{{prediction}}</h1>
+    <div class="card">
+        <h1>Enter in Predict Page</h1>
+        <h1>Wine Quality</h1>
+        <h1 class="prediction">{{ prediction }}</h1>
+    </div>
 </body>
 
 </html>
